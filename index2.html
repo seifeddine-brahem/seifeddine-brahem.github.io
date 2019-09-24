@@ -3,13 +3,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+
   <meta charset="utf-8" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="generator" content="pandoc" />
 
+
+
   <meta name="date" content="2019-09-24" />
 
-  <title>index.utf8.md</title>
+  <title>Home</title>
 
   <script src="site_libs/jquery-1.12.4/jquery.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -53,6 +56,8 @@
     }
   </script>
 
+
+
   <style type="text/css">
     h1 {
       font-size: 34px;
@@ -87,6 +92,9 @@
     }
   </style>
 
+
+
+
   <style type="text/css">
     .main-container {
       max-width: 940px;
@@ -120,6 +128,7 @@
       display: list-item;
     }
   </style>
+
 
   <style type="text/css">
     /* padding for bootstrap navbar */
@@ -208,16 +217,17 @@
     // manage active state of menu based on current page
     $(document).ready(function () {
       // active menu anchor
-      href = window.location.pathname;
-      href = href.substr(href.lastIndexOf("/") + 1);
-      if (href === "") href = "index2.html";
+      href = window.location.pathname
+      href = href.substr(href.lastIndexOf('/') + 1)
+      if (href === "")
+        href = "index2.html";
       var menuAnchor = $('a[href="' + href + '"]');
 
       // mark it active
-      menuAnchor.parent().addClass("active");
+      menuAnchor.parent().addClass('active');
 
       // if it's got a parent navbar menu mark it active as well
-      menuAnchor.closest("li.dropdown").addClass("active");
+      menuAnchor.closest('li.dropdown').addClass('active');
     });
   </script>
 
@@ -236,7 +246,7 @@
 
     .tabset-dropdown>.nav-tabs>li.active:before {
       content: "";
-      font-family: "Glyphicons Halflings";
+      font-family: 'Glyphicons Halflings';
       display: inline-block;
       padding: 10px;
       border-right: 1px solid #ddd;
@@ -249,7 +259,7 @@
 
     .tabset-dropdown>.nav-tabs.nav-tabs-open:before {
       content: "";
-      font-family: "Glyphicons Halflings";
+      font-family: 'Glyphicons Halflings';
       display: inline-block;
       padding: 10px;
       border-right: 1px solid #ddd;
@@ -283,19 +293,27 @@
     });
 
     $(document).ready(function () {
-      $(".tabset-dropdown > .nav-tabs > li").click(function () {
-        $(this)
-          .parent()
-          .toggleClass("nav-tabs-open");
+      $('.tabset-dropdown > .nav-tabs > li').click(function () {
+        $(this).parent().toggleClass('nav-tabs-open')
       });
     });
   </script>
 
   <!-- code folding -->
+
+
+
+
 </head>
 
 <body>
+
+
   <div class="container-fluid main-container">
+
+
+
+
     <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -315,7 +333,9 @@
               <a href="about2.html">About</a>
             </li>
           </ul>
-          <ul class="nav navbar-nav navbar-right"></ul>
+          <ul class="nav navbar-nav navbar-right">
+
+          </ul>
         </div>
         <!--/.nav-collapse -->
       </div>
@@ -323,7 +343,15 @@
     </div>
     <!--/.navbar -->
 
-    <div class="fluid-row" id="header"></div>
+    <div class="fluid-row" id="header">
+
+
+
+      <h1 class="title toc-ignore">Home</h1>
+      <h4 class="date">2019-09-24</h4>
+
+    </div>
+
 
     <pre class="r"><code>library(leaflet)
 label =&quot;Tunisia is a North African country bordering the Mediterranean   Sea and Sahara Desert? In the capital, Tunis, the Bardo Museum has archaeological exhibits from Roman mosaics to Islamic art. The city???s medina quarter encompasses the massive Al-Zaytuna Mosque and a thriving souk. To the east, the site of ancient Carthage features the Antonine Baths and other ruins, plus artifacts at the Carthage National Museum.&quot;
@@ -332,8 +360,8 @@ my_map =leaflet() %&gt;%
   addMarkers(lat=36.81897, lng=10.16579, popup = label) %&gt;%
   setView(lat=36.81897, lng=10.16579, zoom = 5)
 my_map</code></pre>
-    <div id="htmlwidget-6e59499093ed082e5f96" style="width:672px;height:480px;" class="leaflet html-widget"></div>
-    <script type="application/json" data-for="htmlwidget-6e59499093ed082e5f96">
+    <div id="htmlwidget-8403f5c687167784aeda" style="width:672px;height:480px;" class="leaflet html-widget"></div>
+    <script type="application/json" data-for="htmlwidget-8403f5c687167784aeda">
       {
         "x": {
           "options": {
@@ -402,15 +430,16 @@ my_map</code></pre>
         "jsHooks": []
       }
     </script>
+
+
+
+
   </div>
 
   <script>
     // add bootstrap table styles to pandoc tables
     function bootstrapStylePandocTables() {
-      $("tr.header")
-        .parent("thead")
-        .parent("table")
-        .addClass("table table-condensed");
+      $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
     }
     $(document).ready(function () {
       bootstrapStylePandocTables();
@@ -422,11 +451,11 @@ my_map</code></pre>
     (function () {
       var script = document.createElement("script");
       script.type = "text/javascript";
-      script.src =
-        "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      script.src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
       document.getElementsByTagName("head")[0].appendChild(script);
     })();
   </script>
+
 </body>
 
 </html>
